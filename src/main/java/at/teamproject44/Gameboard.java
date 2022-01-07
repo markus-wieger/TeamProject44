@@ -1,7 +1,7 @@
 package at.teamproject44;
 
 public class Gameboard {
-    private Player;
+    private Player player;
     Ship[][] board = new Ship[9][9];
 
     /*Gameboard:
@@ -9,7 +9,7 @@ public class Gameboard {
     Erstellt ein neues Objekt vom Typ Gameboard und weißt es einem Spieler zu.
      */
     public Gameboard(Player p) {
-        Player = p;
+        player = p;
     }
 
     /*place_ship_on_board(Schiffart, x_koordinate, y_koordinate, Ausrichtung_auf_Spielbrett):
@@ -18,7 +18,7 @@ public class Gameboard {
                  False ist vertikal.
      */
     public void placeShipOnBoard(Ship ship, int x, int y, boolean alignment) {
-        int length = Ship.getLength();
+        int length = ship.getType();
         if (x+length-2>9&&alignment) {
             System.out.println("Nicht mehr im Spielbereich");
             return;
@@ -56,7 +56,7 @@ public class Gameboard {
 
 
     public boolean hit(int x, int y) {
-
+    return true;
     }
 
 
