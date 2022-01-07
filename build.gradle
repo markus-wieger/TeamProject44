@@ -24,3 +24,5 @@ javafx {
 test {
     useJUnitPlatform()
 }
+
+mainClassName = 'at.teamproject44.Main'
