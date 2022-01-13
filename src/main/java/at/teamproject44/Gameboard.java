@@ -18,7 +18,7 @@ Index of Gameboard:
  */
 public class Gameboard {
     private Player player;
-    private Ship[][] board = new Ship[9][9];
+    private Ship[][] board = new Ship[10][10];
     private Ship alreadyHit = new Ship(25, true);
 
     /*Gameboard:
