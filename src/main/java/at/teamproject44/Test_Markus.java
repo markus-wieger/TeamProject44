@@ -10,8 +10,9 @@ public class Test_Markus {
         Gameboard player1 = new Gameboard(player);
         initializeShips(3);
         player1.placeShipOnBoard(ships[1],2,2,ships[1].isVertical());
-        player1.placeShipOnBoard(ships[2],2,1,false );
-
+        player1.placeShipOnBoard(ships[2],2,1,ships[2].isVertical());
+        player1.placeShipOnBoard(ships[0],2,3,ships[0].isVertical());
+        player1.hit(2,2);
     }
 
 
